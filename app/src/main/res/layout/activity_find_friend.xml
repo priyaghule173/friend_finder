@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/searchedname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="SEARCH BY TAG"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/nameoftag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tag_array"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="5dp"
+        android:onClick="addtagtoString"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="SEARCH"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/smsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5dp"
+            android:onClick="sendSMS"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="SMS"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/callbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5dp"
+            android:onClick="Callfriend"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="CALL"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

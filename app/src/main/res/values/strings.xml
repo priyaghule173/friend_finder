@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">FriendFinder</string>
+
+    <string-array name="tag_array">
+        <item>College Friend</item>
+        <item>Gym</item>
+        <item>Prof</item>
+        <item>Family</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
